@@ -1,0 +1,70 @@
+:root {
+  color-scheme: dark;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle at top, #30305a, #0f1026 70%);
+}
+
+.game-shell {
+  width: min(90vw, 400px);
+  text-align: center;
+  background: rgba(8, 8, 20, 0.9);
+  border: 1px solid #3f3f72;
+  border-radius: 14px;
+  padding: 1rem;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
+}
+
+h1 {
+  margin-top: 0;
+  letter-spacing: 0.03em;
+}
+
+.instructions {
+  margin: 0.4rem auto 0.8rem;
+  color: #d9ddff;
+  font-size: 0.95rem;
+}
+
+.hud {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.6rem;
+  font-weight: 700;
+}
+
+#track {
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid #6f71ad;
+  background: #474c5e;
+}
+
+#restart {
+  margin-top: 0.8rem;
+  width: 100%;
+  padding: 0.65rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  font-weight: 700;
+  background: #ee4957;
+  color: white;
+  cursor: pointer;
+}
+
+#restart:hover {
+  filter: brightness(1.08);
+}
+
+#status {
+  min-height: 1.5rem;
+  margin-bottom: 0;
+  color: #ffd77a;
+}
